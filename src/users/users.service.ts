@@ -20,4 +20,8 @@ export class UsersService {
       age: 30,
     },
   ];
+
+  getUserByEmail(email: string): User {
+    return this.users.find(user => user.email === email);
+  }
 }
